@@ -4,78 +4,197 @@
   <head>
     <title>Dantes Parales</title>
 
-    <style>
+```
+<style>
   body {
-    background-color: lightblue;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+  }
+
+  header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid darkblue;
+  }
+
+  header h2 {
+    color: darkblue;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav li {
+    display: inline;
+    margin: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #0077cc;
+  }
+
+  main {
+    width: 80%;
+    margin: auto;
+  }
+
+  section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+
+  h1, h2 {
+    color: darkblue;
+  }
+
+  .welcome {
+    text-align: center;
+    padding: 40px;
+  }
+
+  .skills li,
+  .projects li {
+    background-color: #f0f4f8;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-position: inside;
+  }
+
+  .skills li:hover,
+  .projects li:hover {
+    background-color: #e0e8f0;
+  }
+
+  footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
   }
 </style>
+```
+
   </head>
 
   <body>
 
+```
+<header>
+  <h2>Dantes Parales</h2>
 
-<h2>Dantes Parales</h2>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-    
 
-<h1 id="home" style="color: darkblue;">Hi, I'm Dantes Parales</h1>
-<p>Welcome to my personal portfolio.</p>
+<main>
 
-<p>
-  I am an Information Systems student who is interested in programming,
-  web development, and database management. I enjoy creating simple
-  projects and improving my programming skills. My goal is to continue
-  learning new technologies and use my knowledge to build useful systems
-  in the future.
-</p>
+  <section id="home" class="welcome">
+    <h1>Hi, I'm Dantes Parales</h1>
 
-<h2 style="color: darkblue;">Education</h2>
+    <p>Welcome to my personal portfolio.</p>
 
-<p>
-  I am currently studying Bachelor of Science in Information Systems.
-  I am developing my knowledge in programming, databases, information
-  systems, and web development.
-</p>
+    <p>
+      I am an Information Systems student who is interested in
+      programming, web development, and database management.
+    </p>
+  </section>
 
-<h2 id="skills" style="color: darkblue;">Skills</h2>
 
-<ul>
-  <li>Java</li>
-  <li>C#</li>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>SQLite</li>
-  <li>Apache NetBeans</li>
-  <li>Database Management</li>
-  <li>Basic Web Development</li>
-</ul>
+  <section id="about">
+    <h2>About Me</h2>
 
-<h2 id="projects" style="color: darkblue;">Projects</h2>
+    <p>
+      I am an Information Systems student who is interested in
+      programming, web development, and database management.
+      I enjoy creating simple projects and improving my programming
+      skills.
+    </p>
 
-<ul>
-  <li>Login and Registration System</li>
-  <li>Employee Payroll System</li>
-  <li>Database Management Projects</li>
-  <li>Personal Portfolio Website</li>
-</ul>
+    <p>
+      My goal is to continue learning new technologies and use my
+      knowledge to build useful systems in the future.
+    </p>
 
-<h2 id="contact" style="color: darkblue;">Contact</h2>
+    <h2>Education</h2>
 
-<p>
-  Email: dantesparales@gmail.com
-</p>
+    <p>
+      I am currently studying Bachelor of Science in Information Systems.
+      I am developing my knowledge in programming, databases,
+      information systems, and web development.
+    </p>
+  </section>
 
-<p>
-  I am always interested in learning new skills, creating projects,
-  and improving my knowledge in technology.
-</p>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <ul class="skills">
+      <li>Java</li>
+      <li>C#</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>SQLite</li>
+      <li>Apache NetBeans</li>
+      <li>Database Management</li>
+      <li>Basic Web Development</li>
+    </ul>
+  </section>
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <ul class="projects">
+      <li>Login and Registration System</li>
+      <li>Employee Payroll System</li>
+      <li>Database Management Projects</li>
+      <li>Personal Portfolio Website</li>
+    </ul>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+      Email: dantesparales@gmail.com
+    </p>
+
+    <p>
+      I am always interested in learning new skills, creating projects,
+      and improving my knowledge in technology.
+    </p>
+  </section>
+
+</main>
+
 
 <footer>
   © 2026 Dantes Parales. All Rights Reserved.
